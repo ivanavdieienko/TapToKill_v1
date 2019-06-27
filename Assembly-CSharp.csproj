@@ -54,14 +54,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\behaviors\BadBehavior.cs" />
-    <Compile Include="Assets\Scripts\behaviors\BaseBehavior.cs" />
-    <Compile Include="Assets\Scripts\behaviors\GoodBehavior.cs" />
+    <Compile Include="Assets\Scripts\data\GameState.cs" />
+    <Compile Include="Assets\Scripts\data\ItemTypes.cs" />
+    <Compile Include="Assets\Scripts\data\TextConstants.cs" />
     <Compile Include="Assets\Scripts\gamecore\GameCore.cs" />
-    <Compile Include="Assets\Scripts\managers\ObjectPool.cs" />
-    <Compile Include="Assets\Scripts\ui\GameUI.cs" />
-    <Compile Include="Assets\Scripts\ui\popups\TryAgainPopup.cs" />
-    <Compile Include="Assets\Scripts\ui\popups\YouWonPopup.cs" />
+    <Compile Include="Assets\Scripts\managers\NetworkManager.cs" />
+    <Compile Include="Assets\Scripts\managers\UIManager.cs" />
+    <Compile Include="Assets\Scripts\utils\RandomUtils.cs" />
+    <Compile Include="Assets\Scripts\view\GameField.cs" />
+    <Compile Include="Assets\Scripts\view\gameitems\BaseBehavior.cs" />
+    <Compile Include="Assets\Scripts\view\gameitems\NegativeBehavior.cs" />
+    <Compile Include="Assets\Scripts\view\gameitems\PositiveBehavior.cs" />
+    <Compile Include="Assets\Scripts\view\GameUI.cs" />
+    <Compile Include="Assets\Scripts\view\MainMenu.cs" />
+    <Compile Include="Assets\Scripts\view\popups\GameOverPopup.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>C:/WORK/TapToKill_v1/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
@@ -311,6 +317,26 @@
   <Target Name="AfterBuild">
   </Target>
   -->
+  <ItemGroup>
+    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+      <HintPath>C:/Program Files/Unity 2018.2.9/Editor\Data/PlaybackEngines/iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="UnityEditor.iOS.Extensions.Common">
+      <HintPath>C:/Program Files/Unity 2018.2.9/Editor\Data/PlaybackEngines/iOSSupport\UnityEditor.iOS.Extensions.Common.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+      <HintPath>C:/Program Files/Unity 2018.2.9/Editor\Data/PlaybackEngines/iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="UnityEditor.iOS.Extensions.Common">
+      <HintPath>C:/Program Files/Unity 2018.2.9/Editor\Data/PlaybackEngines/iOSSupport\UnityEditor.iOS.Extensions.Common.dll</HintPath>
+    </Reference>
+  </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>C:/Program Files/Unity 2018.2.9/Editor\Data/PlaybackEngines/iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
